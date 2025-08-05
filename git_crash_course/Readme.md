@@ -218,19 +218,56 @@ The new branch is now tracked on the remote.
 
 To visualize the branch and tree. You can add an extension
 
+
+## Remotes
+
+We can add remotes but often we will add remotes via upstream when adding a branch
+
+```sh
+git remote add ...
+
+git push --set-upstream origin branch_name
+```
+
 ## Fetching
 
 Fetch updates from the remote (but don’t merge):
 
 ```bash
 git fetch
-````
-
-## Remotes
+```
 
 ## Stashing
 
+
+**Stashing** temporarily shelves (or "stashes") changes you've made to your working directory so you can work on something else without committing those changes.
+
+It’s useful when:
+- You’re in the middle of a task but need to switch branches
+- You don’t want to lose uncommitted changes
+
+```sh
+git stash           # Save all uncommitted changes (tracked files only)
+git stash save my_name   # Save changes with a custom message (older syntax, still works)
+git stash push -m "message"  #Save changes with a custom message
+git stash list      # Show list of all stashed changes
+git stash pop       # Apply the latest stash and remove it from the stash list
+git stash apply     # Apply the latest stash but keep it in the stash list
+```
+
+> 🧠 Bonus tip
+You can also stash specific files with the new syntax:
+
+```sh
+git stash push -m "partial changes" file1.py file2.txt
+````
+
 ## Merging
+
+```sh
+git checkout branch_name
+git merge origin/main
+```
 
 ## Add
 
