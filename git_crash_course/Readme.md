@@ -208,6 +208,16 @@ checkout the branch (switch to the branch)
 git checkout branch_name
 ```
 
+>You can't push a local branch that doesn't have a remote on Github. To solve it run: 
+
+```sh
+ git push --set-upstream origin branch_name
+```
+
+The new branch is now tracked on the remote.
+
+To visualize the branch and tree. You can add an extension
+
 ## Fetching
 
 Fetch updates from the remote (but don’t merge):
