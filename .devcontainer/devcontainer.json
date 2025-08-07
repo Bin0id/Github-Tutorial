@@ -1,7 +1,10 @@
 {
   "name": "My Dev Container",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
-    "ghcr.io/devcontainers/features/terraform:1": {}
+    // Terraform CLI installation
+    "ghcr.io/devcontainers/features/terraform:1": {},
+
+    // Ruby installation (latest stable version by default)
+    "ghcr.io/devcontainers/features/ruby:1": {}
   }
 }
