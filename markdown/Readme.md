@@ -1,5 +1,7 @@
 # Markdown Examples
 
+Note that we use markdown in **Github.dev**, it will use *Github Flavoured Markdown (GFM)*.
+
 - [unordered lists](#unordered-lists)
 - ordered lists
 - text formatting
