@@ -1,4 +1,3 @@
-
 ---
 name: Secret Issue
 about: submits a Secret
